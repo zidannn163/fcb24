@@ -5,15 +5,14 @@
 
 .header {
   width: 100%;
-  height: 700px;
-  background-color: orange;
+  height: 900px;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
 .header__content {
   width: 100%;
-  height: 100%;
+  height: 830px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,10 +41,14 @@
   color: white;
   text-transform: uppercase;
   font-family: 'Exo 2', sans-serif;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 
 .header__button:hover {
   background-color: #202096;
+  -webkit-box-shadow: inset 0px 0px 20px 4px rgba(0, 0, 0, 0.49);
+          box-shadow: inset 0px 0px 20px 4px rgba(0, 0, 0, 0.49);
 }
 
 .header__logo {
@@ -93,6 +96,17 @@
 .nav__item {
   padding: 0 10px 0 10px;
   line-height: 50px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.nav__link:hover {
+  color: rgba(71, 77, 128, 0.876);
 }
 
 .blur {
@@ -161,6 +175,13 @@
   padding: 0 15px;
 }
 
+.registration__input {
+  background-color: transparent;
+  position: absolute;
+  border: 2px solid transparent;
+  z-index: 2;
+}
+
 .registration__button {
   margin: 0 auto;
   background-color: #3636ff;
@@ -172,26 +193,38 @@
 .form__input {
   position: relative;
   margin: 15px;
+  width: 147px;
+  height: 22px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.form__input_alarm {
+  border: 1px solid orangered;
+  -webkit-box-shadow: 0px 0px 4px 1px rgba(232, 51, 23, 0.78);
+          box-shadow: 0px 0px 4px 1px rgba(232, 51, 23, 0.78);
 }
 
 .form__lable {
   position: absolute;
   color: rgba(65, 65, 65, 0.604);
   left: 5px;
+  top: 3px;
   -webkit-transition: all .4s;
   transition: all .4s;
   font-family: Arial, Helvetica, sans-serif;
+  z-index: 1;
 }
 
 .form__lable_sm {
   left: 1px;
   top: -15px;
   font-size: 12px;
-  color: black;
+  color: rgba(87, 87, 87, 0.652);
 }
 
 .form__lable_alarm {
-  color: rgba(255, 68, 0, 0.576);
+  color: rgba(255, 68, 0, 0.815);
 }
 
 .form__warning {
@@ -201,8 +234,8 @@
   position: absolute;
   border: 1px solid #feb020;
   border-radius: 4px;
-  left: 170px;
-  top: -10px;
+  left: 220px;
+  top: 75px;
   background: linear-gradient(135deg, #f9b841, #ffd890);
 }
 /*# sourceMappingURL=style.css.map */
